@@ -1,0 +1,8 @@
+2025-06-12T23:36:09.649138200: Erro ao carregar professores: src\dados\professores\professores.dat (O sistema não pode encontrar o caminho especificado)
+2025-06-12T23:36:09.659773500: Erro ao carregar faltas: src\dados\faltas\faltas.dat (O sistema não pode encontrar o caminho especificado)
+2025-06-12T23:36:09.661774400: Erro ao carregar notas: src\dados\notas\notas.dat (O sistema não pode encontrar o caminho especificado)
+2025-06-12T23:36:09.664281700: Erro ao carregar atividades: src\dados\atividades\atividades.dat (O sistema não pode encontrar o caminho especificado)
+2025-06-12T23:36:09.709670300: Pré-carga de professores realizada.
+2025-06-12T23:36:09.716179700: Pré-carga de faltas realizada.
+2025-06-12T23:36:09.721182: Pré-carga de notas realizada.
+2025-06-12T23:36:09.734709500: Pré-carga de atividades realizada.
