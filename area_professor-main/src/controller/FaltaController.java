@@ -14,7 +14,7 @@ public class FaltaController {
         this.faltas = faltaDAO.carregar();
     }
 
-    public void cadastrar(Falta falta) {
+    public void cadastrar(Falta falta) throws Exception {
         try {
             faltas.add(falta);
             salvar();

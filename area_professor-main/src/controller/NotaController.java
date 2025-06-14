@@ -1,6 +1,8 @@
 package controller;
 
 import dal.NotaDAO;
+import factory.ProfessorFactory;
+
 import java.util.ArrayList;
 import model.Nota;
 
@@ -14,7 +16,7 @@ public class NotaController {
         this.notas = notaDAO.carregar();
     }
 
-    public void cadastrar(Nota nota) {
+    public void cadastrar(Nota nota) throws Exception {
         try {
             notas.add(nota);
             salvar();

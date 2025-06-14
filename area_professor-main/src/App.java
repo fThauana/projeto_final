@@ -3,10 +3,10 @@ import view.MenuView;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Iniciando a aplicação da Área do Professor...");
+        System.out.println("\nIniciando a aplicação da Área do Professor...");
 
         MenuView.main(args);
 
-        System.out.println("Aplicação finalizada. Volte sempre!");
-    }
+        System.out.println("Aplicação finalizada. Volte sempre!\n");
+    }   
 }

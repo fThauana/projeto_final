@@ -24,32 +24,52 @@ public class PreCarga {
             AtividadeController atividadeController) {
 
         if (professorController.listar().isEmpty()) {
-            professorController.cadastrar("João Silva", "111.222.333-44", "Matemática");
-            professorController.cadastrar("Maria Santos", "555.666.777-88", "Português");
-            professorController.cadastrar("Pedro Costa", "999.888.777-66", "Física");
+            try {
+                professorController.cadastrar("João Silva", "111.222.333-44", "Matemática");
+                professorController.cadastrar("Maria Santos", "555.666.777-88", "Português");
+                professorController.cadastrar("Pedro Costa", "999.888.777-66", "Física");
+                
+            } catch (Exception e) {
+                 System.out.println("Erro: " + e.getMessage());
+            }
             Logger.registrar("Pré-carga de professores realizada.");
         }
 
         if (faltaController.listar().isEmpty()) {
-            faltaController.cadastrar(FaltaFactory.criar("A001", "Atestado médico"));
-            faltaController.cadastrar(FaltaFactory.criar("A002", "Viagem familiar"));
-            faltaController.cadastrar(FaltaFactory.criar("A003", "Compromisso pessoal"));
+            try {
+                faltaController.cadastrar(FaltaFactory.criar("A001", "Atestado médico"));
+                faltaController.cadastrar(FaltaFactory.criar("A002", "Viagem familiar"));
+                faltaController.cadastrar(FaltaFactory.criar("A003", "Compromisso pessoal"));
+                
+            } catch (Exception e) {
+                System.out.println("Erro: " + e.getMessage());
+            }
             Logger.registrar("Pré-carga de faltas realizada.");
         }
 
         if (notaController.listar().isEmpty()) {
-            notaController.cadastrar(NotaFactory.criar("A001", "Prova 1", 8.5));
-            notaController.cadastrar(NotaFactory.criar("A002", "Trabalho em Grupo", 7.0));
-            notaController.cadastrar(NotaFactory.criar("A003", "Participação", 9.0));
+            try {
+                notaController.cadastrar(NotaFactory.criar("A001", "Prova 1", 8.5));
+                notaController.cadastrar(NotaFactory.criar("A002", "Trabalho em Grupo", 7.0));
+                notaController.cadastrar(NotaFactory.criar("A003", "Participação", 9.0));
+                
+            } catch (Exception e) {
+                System.out.println("Erro: " + e.getMessage());
+            }
             Logger.registrar("Pré-carga de notas realizada.");
         }
 
         if (atividadeController.listar().isEmpty()) {
-            atividadeController.cadastrar(AtividadeFactory.criar("A001", "Trabalho de Biologia - Cap. 1"));
-            atividadeController.cadastrar(AtividadeFactory.criar("A002", "Redação sobre o Meio Ambiente"));
-            atividadeController.cadastrar(AtividadeFactory.criar("A003", "Pesquisa de História - Era Vargas"));
-            
-            atividadeController.lancarParaTurma(ALUNOS_EXEMPLO, "Exercício de Revisão");
+            try {
+                atividadeController.cadastrar(AtividadeFactory.criar("A001", "Trabalho de Biologia - Cap. 1"));
+                atividadeController.cadastrar(AtividadeFactory.criar("A002", "Redação sobre o Meio Ambiente"));
+                atividadeController.cadastrar(AtividadeFactory.criar("A003", "Pesquisa de História - Era Vargas"));
+                
+                atividadeController.lancarParaTurma(ALUNOS_EXEMPLO, "Exercício de Revisão");
+                
+            } catch (Exception e) {
+                System.out.println("Erro: " + e.getMessage());
+            }
             Logger.registrar("Pré-carga de atividades realizada.");
         }
     }

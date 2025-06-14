@@ -13,7 +13,7 @@ public class AtividadeController {
         this.atividades = AtividadeDAO.carregar();
     }
 
-    public void cadastrar(Atividade atividade) {
+    public void cadastrar(Atividade atividade) throws Exception {
         try {
             atividades.add(atividade);
             salvar();
@@ -40,7 +40,7 @@ public class AtividadeController {
         }
     }
 
-    public void lancarParaTurma(Aluno[] alunos, String descricao) {
+    public void lancarParaTurma(Aluno[] alunos, String descricao) throws Exception {
         try {
             for (Aluno a : alunos) {
                 atividades.add(new Atividade(a.getMatricula(), descricao));
