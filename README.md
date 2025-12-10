@@ -3,6 +3,16 @@
 Este projeto é um Sistema de Gerenciamento Escolar desenvolvido em Java, utilizando arquitetura MVC, princípios de Orientação a Objetos e interação via console.  
 O sistema permite o gerenciamento de Professores, Faltas, Notas e Atividades.
 
+## Autores
+Projeto acadêmico desenvolvido por:
+
+- Leon Trigo
+- Lucas Kumegawa de Godoi
+- Thauana Vitória Ferreira Farias
+- Vitor Gonçalves
+
+---
+
 ## Funcionalidades
 
 ### Professores
